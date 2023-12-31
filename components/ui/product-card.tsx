@@ -7,6 +7,7 @@ import IconButton from "@/components/ui/icon-button";
 import {Expand, ShoppingCart} from "lucide-react";
 import Currency from "@/components/ui/currency";
 import {useRouter} from "next/navigation";
+
 interface ProductCardProps {
     data: Product;
 }
@@ -34,11 +35,13 @@ const ProductCard: React.FC<ProductCardProps> = ({
                 <div className='opacity-0 group-hover:opacity-100 transition absolute w-full px-6 bottom-5'>
                     <div className='flex gap-x-6 justify-center'>
                         <IconButton
-                            onClick={()=>{}}
+                            onClick={() => {
+                            }}
                             icon={<Expand size={20} className='text-gray-600'/>}
                         />
                         <IconButton
-                            onClick={()=>{}}
+                            onClick={() => {
+                            }}
                             icon={<ShoppingCart size={20} className='text-gray-600'/>}
                         />
                     </div>
