@@ -3,7 +3,7 @@
 import {useState, useEffect} from 'react';
 import Container from "@/components/ui/container";
 import useCart from "@/hooks/use-cart";
-
+import CartItem from "./components/cart-item";
 
 const Page = () => {
 
@@ -32,7 +32,7 @@ const Page = () => {
                             {cart.items.length === 0 && <p className='text-neutral-500'>No items added to cart</p>}
                             <ul>
                                 {cart.items.map((items)=> (
-                                    <Cartitem
+                                    <CartItem
                                     key={items.id}
                                     data={items}
                                     />
