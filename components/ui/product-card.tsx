@@ -8,7 +8,7 @@ import {Expand, ShoppingCart} from "lucide-react";
 import Currency from "@/components/ui/currency";
 import {useRouter} from "next/navigation";
 import usePreviewModal from "@/hooks/use-preview-modal";
-import useCart from "@/hooks/use-card";
+import useCart from "@/hooks/use-cart";
 
 interface ProductCardProps {
     data: Product;

@@ -2,7 +2,7 @@
 import {useEffect, useState} from "react";
 import Button from "./ui/button";
 import {ShoppingBag} from "lucide-react";
-import useCart from "@/hooks/use-card";
+import useCart from "@/hooks/use-cart";
 import {useRouter} from "next/navigation";
 
 const NavbarActions = () => {
